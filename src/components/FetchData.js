@@ -3,7 +3,7 @@ import {ethers} from "ethers";
 import { Bars } from 'react-loading-icons'
 
 import From from "./FetchFrom";
-import Timestamp from "./FetchTime.jsx";
+import Timestamp from "./FetchTime.js";
 
 const API = "wss://eth-mainnet.g.alchemy.com/v2/sPHej3eXIm8lSDLxDymv98G3KgOWnuD_";
 
