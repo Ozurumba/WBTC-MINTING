@@ -39,10 +39,10 @@ const FetchData = () => {
 
   return (
     <div>
-     <h1 className='text-primary text-center text-3xl md:text-5xl my-10 font-bold'>Mint & Burn - WBTC</h1>
+     <h1 className='text-primary text-center text-3xl md:text-5xl my-10 font-bold'>WBTC - Mint & Burn </h1>
       <div className='grid lg:grid-cols-2 gap-6 mt-6 mx-6 mb-6'>
         <div className="flex flex-col items-center bg-secondary p-4 shadow-lg rounded-md">
-          <h3 className='mb-4 text-lg md:text-2xl font-bold text-primary'>Mint Transactions</h3>
+          <h3 className='mb-4 text-lg md:text-2xl font-bold text-primary'>20 Mint Transactions</h3>
           <div className='flex flex-col divide-primary divide-y text-primary font-semibold'>
             {!loading ? (mint.map((value, index)=>(
               <ul className="m-3" key={index}>
@@ -50,11 +50,11 @@ const FetchData = () => {
                 <From transactionHash={value.transactionHash} api={API}></From>
                 <Timestamp blockNumber={value.blockNumber} api={API}></Timestamp>
               </ul>
-              ))) : <Bars stroke="#C93D4B" speed={.75}/>}
+              ))) : <Bars stroke="#00FF00" speed={.9}/>}
           </div>
         </div>
         <div className="flex flex-col items-center bg-secondary p-4 shadow-lg rounded-md">
-          <h3 className='mb-4 text-lg md:text-2xl font-bold text-primary' >Burn Transactions</h3>
+          <h3 className='mb-4 text-lg md:text-2xl font-bold text-primary' >20 Burn Transactions</h3>
           <div className='flex flex-col divide-primary divide-y text-primary font-semibold'>
             {!loading ? (burn.map((value, index)=>(
               <ul className="m-3" key={index}>
@@ -62,7 +62,7 @@ const FetchData = () => {
                 <From transactionHash={value.transactionHash} api={API}></From>
                 <Timestamp blockNumber={value.blockNumber} api={API}></Timestamp>
               </ul>
-              ))) : <Bars stroke="#C93D4B" speed={.75}/>}
+              ))) : <Bars stroke="#00FF00" speed={.9}/>}
           </div>
         </div>
             </div>
