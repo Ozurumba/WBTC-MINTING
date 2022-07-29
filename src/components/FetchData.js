@@ -50,7 +50,7 @@ const FetchData = () => {
                 <From transactionHash={value.transactionHash} api={API}></From>
                 <Timestamp blockNumber={value.blockNumber} api={API}></Timestamp>
               </ul>
-              ))) : <Bars stroke="#00FF00" speed={.9}/>}
+              ))) : <Bars circle="#00FF00" speed={.9}/>}
           </div>
         </div>
         <div className="flex flex-col items-center bg-secondary p-4 shadow-lg rounded-md">
@@ -62,7 +62,7 @@ const FetchData = () => {
                 <From transactionHash={value.transactionHash} api={API}></From>
                 <Timestamp blockNumber={value.blockNumber} api={API}></Timestamp>
               </ul>
-              ))) : <Bars stroke="#00FF00" speed={.9}/>}
+              ))) : <Bars circle="#00FF00" speed={.9}/>}
           </div>
         </div>
             </div>
